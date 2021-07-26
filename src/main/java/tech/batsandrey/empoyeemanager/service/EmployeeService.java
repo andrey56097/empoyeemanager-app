@@ -13,7 +13,7 @@ import java.util.UUID;
 public class EmployeeService {
 
     @Autowired
-    EmployeeRepository employeeRepository;
+    private EmployeeRepository employeeRepository;
 
     public Employee addEmployee(Employee employee) {
         employee.setEmployeeCode(UUID.randomUUID().toString());
